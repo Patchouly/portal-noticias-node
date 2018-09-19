@@ -3,11 +3,15 @@ function NewsEntity(connection){
 }
 
 NewsEntity.prototype.getNoticias = function(callback){
-	this._connection.query("SELECT * from noticias", callback);
+	this._connection.query("SELECT * from noticias order by data desc", callback);
 };
 
-NewsEntity.prototype.getNoticia = function(callback){
-	this._connection.query("SELECT * from noticias where id = 1", callback);
+NewsEntity.prototype.getNoticia = function(param, callback){
+	this._connection.query("SELECT * from noticias where id = "+ param.id, callback);
+};
+
+NewsEntity.prototype.getLastNews = function(callback){
+	this._connection.query("SELECT * from noticias order by data limit 5", callback);
 };
 
 NewsEntity.prototype.inserNew = function(noticia, callback){
