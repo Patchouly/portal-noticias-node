@@ -1,4 +1,8 @@
 /* TODO list
+* -
+* - npm config set proxy http://<username>:<password>@<proxy-server-url>:<port>
+* - npm config set https-proxy http://<username>:<password>@<proxy-server-url>:<port>
+* -
 * - Install Node.js https://nodejs.org (testar no CMD com o comando {node -v})
 * - Testar se o NPM foi instalado junto com o nodejs {npm -v}
 * - Escolhe um diretório para o novo projeto NodeJs e inicia o NPM {npm init} (cria um projeto node na pasta selecionada)
