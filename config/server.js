@@ -1,10 +1,9 @@
 /* TODO list
 * -
-* - npm config set proxy http://<username>:<password>@<proxy-server-url>:<port>
-* - npm config set https-proxy http://<username>:<password>@<proxy-server-url>:<port>
-* -
 * - Install Node.js https://nodejs.org (testar no CMD com o comando {node -v})
 * - Testar se o NPM foi instalado junto com o nodejs {npm -v}
+* - npm config set proxy http://<username>:<password>@<proxy-server-url>:<port>
+* - npm config set https-proxy http://<username>:<password>@<proxy-server-url>:<port>
 * - Escolhe um diretório para o novo projeto NodeJs e inicia o NPM {npm init} (cria um projeto node na pasta selecionada)
 * - Testar o novo projeto com o comando {node <app>}
 * - Instala o Express {npm install express --save} (--save inclue a instalação na pasta node_modules do projeto)
@@ -15,6 +14,7 @@
 * - Instalar o consign {npm install consign --save} (plugin que facilita a localização das rotas e módulos)
 * - Instalar body-parser {npm install body-parser --save} (plugin do express para preencher os dados enviados pelo post no model)
 * - Instala express validator {npm install express-validator --save} (plugin que valida os dados do post)
+* - 
 */
 
 var express = require('express'); //Framework para aplicações web
