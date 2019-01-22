@@ -1,7 +1,8 @@
 var pg = require('pg');
 const connectionString = 'postgresql://postgres:cabong@localhost:5432/nodeTraining';
 
-var connPG = function() {
+//faz com que não conecte com o banco ao subir o servidor
+var connPG = function() { 
 	console.log('Conexão recuperada');
 	return new pg.Client({
 		connectionString: connectionString,
@@ -10,5 +11,5 @@ var connPG = function() {
 
 module.exports = function() {
 	console.log('Carregou conexão');
-	return connPG;
+	return connPG; //retorna um objeto com a conexão, sem necessariamente conecta-lo
 }
